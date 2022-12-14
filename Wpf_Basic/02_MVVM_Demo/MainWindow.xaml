@@ -4,8 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_02_MVVM_Demo"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        xmlns:MyViewModel="clr-namespace:_02_MVVM_Demo.ViewModel"
+        mc:Ignorable="d"       
+        Title="MainWindow" Height="400" Width="400">
+    <Window.DataContext>
+        <MyViewModel:SimpleViewModel></MyViewModel:SimpleViewModel>
+    </Window.DataContext>
     <Grid Margin="0,0,0,-6">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
@@ -21,10 +25,10 @@
         <Label Content="A" VerticalAlignment="Center"></Label>
         <Label Grid.Row="1" Content="B" VerticalAlignment="Center"></Label>
         <Label Grid.Row="2" Content="A + B" VerticalAlignment="Center"></Label>
-        <TextBox Name="txtA" Grid.Column="1" VerticalAlignment="Center"></TextBox>
-        <TextBox Name="txtB" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center"></TextBox>
-        <TextBox Name="txtSum" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center"></TextBox>
-        <Button Name="btnSum" Content="Sum" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center"></Button>
-        <DataGrid Grid.Row="4" Grid.ColumnSpan="2"></DataGrid>
+        <TextBox Name="txtA" Text="{Binding FirstNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" VerticalAlignment="Center"></TextBox>
+        <TextBox Name="txtB" Text="{Binding SecondNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center"></TextBox>
+        <TextBox Name="txtSum" Text="{Binding Sum, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center"></TextBox>
+        <Button Name="btnSum" Command="{Binding SubmitCommand}" Content="Sum" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center"></Button>
+        <DataGrid Grid.Row="4" ItemsSource="{Binding lstSum}" Grid.ColumnSpan="2"></DataGrid>
     </Grid>
 </Window>

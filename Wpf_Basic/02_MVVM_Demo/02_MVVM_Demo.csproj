@@ -65,8 +65,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="SimpleClass.cs" />
-    <Compile Include="SimpleViewModel.cs" />
+    <Compile Include="Model\SimpleClass.cs" />
+    <Compile Include="ViewModel\SimpleViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

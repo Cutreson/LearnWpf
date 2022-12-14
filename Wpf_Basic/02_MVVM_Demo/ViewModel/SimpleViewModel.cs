@@ -1,8 +1,9 @@
-﻿using Prism.Commands;
+﻿using _02_MVVM_Demo.Model;
+using Prism.Commands;
 using Prism.Mvvm;
 using System.Collections.ObjectModel;
 
-namespace _02_MVVM_Demo
+namespace _02_MVVM_Demo.ViewModel
 {
     public class SimpleViewModel : BindableBase
     {
@@ -17,6 +18,7 @@ namespace _02_MVVM_Demo
             set
             {
                 SetProperty(ref _firstNumber, value);
+                SubmitCommand.RaiseCanExecuteChanged();
             }
         }
         private int _secondNumber;
@@ -29,6 +31,7 @@ namespace _02_MVVM_Demo
             set
             {
                 SetProperty(ref _secondNumber, value);
+                SubmitCommand.RaiseCanExecuteChanged();
             }
         }
         private int _sum;
@@ -61,7 +64,7 @@ namespace _02_MVVM_Demo
         #endregion
 
         #region Command
-        private DelegateCommand SubmitCommand { get; set; }
+        public DelegateCommand SubmitCommand { get; set; }
         private void OnSubmit()
         {
             Sum = FirstNumber + SecondNumber;

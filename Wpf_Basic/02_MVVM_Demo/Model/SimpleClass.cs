@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace _02_MVVM_Demo
+namespace _02_MVVM_Demo.Model
 {
     public class SimpleClass
     {
