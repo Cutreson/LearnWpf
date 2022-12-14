@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_01_WarehouseManagment"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
@@ -12,22 +13,9 @@
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"   
+        DataContext="{StaticResource MainVM}"
         Title="My Application" Height="450" Width="800">
     <Grid>
-        <materialDesign:ColorZone
-            Mode="PrimaryMid"
-            Padding="16">
-            <StackPanel
-                Orientation="Horizontal">
-                <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}">
-                </ToggleButton>
-                <TextBlock
-                    VerticalAlignment="Center"
-                    Margin="16 0 0 0"
-                    Text="My first Wpf program">
-                </TextBlock>
-            </StackPanel>
-        </materialDesign:ColorZone>
+        
     </Grid>
 </Window>
