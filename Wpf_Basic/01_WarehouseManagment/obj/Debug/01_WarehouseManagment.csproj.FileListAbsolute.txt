@@ -26,3 +26,7 @@ D:\Wpf\LearnWpf\Wpf_Basic\01_WarehouseManagment\obj\Debug\01_WarehouseManagment.
 D:\Wpf\LearnWpf\Wpf_Basic\01_WarehouseManagment\obj\Debug\01_WarehouseManagment.csproj.CopyComplete
 D:\Wpf\LearnWpf\Wpf_Basic\01_WarehouseManagment\obj\Debug\01_WarehouseManagment.exe
 D:\Wpf\LearnWpf\Wpf_Basic\01_WarehouseManagment\obj\Debug\01_WarehouseManagment.pdb
+D:\Wpf\LearnWpf\Wpf_Basic\01_WarehouseManagment\obj\Debug\LoginWindow.g.cs
+D:\Wpf\LearnWpf\Wpf_Basic\01_WarehouseManagment\obj\Debug\LoginWindow.baml
+D:\Wpf\LearnWpf\Wpf_Basic\01_WarehouseManagment\obj\Debug\MyUserControl\ControlBarUC.g.cs
+D:\Wpf\LearnWpf\Wpf_Basic\01_WarehouseManagment\obj\Debug\MyUserControl\ControlBarUC.baml

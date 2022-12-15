@@ -9,9 +9,15 @@ namespace _01_WarehouseManagment.ViewModel
 {
     public class MainViewModel : BaseViewModel
     {
+        public bool IsShow { get; set; }
         public MainViewModel()
         {
-            MessageBox.Show("Đã vào trong MainViewModel");
+            if(!IsShow)
+            {
+                IsShow = true;
+                LoginWindow loginWindow = new LoginWindow();
+                loginWindow.ShowDialog();
+            }
         }
     }
 }

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Wpf\LearnWpf\Wpf_Basic\01_WarehouseManagment\App.xaml
-21155652994
+4531410033
 
-71177103045
+91043926126
 17-1557578390
-MainWindow.xaml;ResourceXAML\MainResource.xaml;
+LoginWindow.xaml;MainWindow.xaml;MyUserControl\ControlBarUC.xaml;ResourceXAML\MainResource.xaml;
 
 False
 
