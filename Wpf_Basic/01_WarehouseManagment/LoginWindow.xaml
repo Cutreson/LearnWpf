@@ -16,15 +16,16 @@
         FontFamily="{DynamicResource MaterialDesignFont}"
         ResizeMode="NoResize"
         WindowStyle="None"
-        Title="Login" Height="300" Width="400" WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Name="loginWindow"
+        Title="Login" Height="300" Width="400">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
-            <uc:ControlBarUC>
-               
+            <uc:ControlBarUC Tag="{Binding Title, ElementName=loginWindow}">
             </uc:ControlBarUC>
         </Grid>
         <materialDesign:Card Grid.Row="1" Width="300" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center">
