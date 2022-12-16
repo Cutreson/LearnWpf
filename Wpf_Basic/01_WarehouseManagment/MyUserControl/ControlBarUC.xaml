@@ -8,30 +8,30 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <materialDesign:ColorZone
-  Mode="Inverted"
-  Padding="16">
+        <materialDesign:ColorZone  
+            Mode="Inverted"  
+            Padding="16">
             <DockPanel>
-                <materialDesign:PopupBox
-      DockPanel.Dock="Right"
-      PlacementMode="BottomAndAlignRightEdges">
+                <materialDesign:PopupBox      
+                    DockPanel.Dock="Right"      
+                    PlacementMode="BottomAndAlignRightEdges">
                     <ListBox>
-                        <ListBoxItem
-          Content="Hello World" />
-                        <ListBoxItem
-          Content="Nice Popup" />
-                        <ListBoxItem
-          Content="Goodbye" />
+                        <ListBoxItem          
+                            Content="Hello World" />
+                        <ListBoxItem          
+                            Content="Nice Popup" />
+                        <ListBoxItem         
+                            Content="Goodbye" />
                     </ListBox>
                 </materialDesign:PopupBox>
-                <StackPanel
-      Orientation="Horizontal">
-                    <ToggleButton
-        Style="{StaticResource MaterialDesignHamburgerToggleButton}" />
-                    <TextBlock
-        VerticalAlignment="Center"
-        Margin="16 0 0 0"
-        Text="Material Design In XAML Toolkit" />
+                <StackPanel      
+                    Orientation="Horizontal">
+                    <ToggleButton        
+                        Style="{StaticResource MaterialDesignHamburgerToggleButton}" />
+                    <TextBlock        
+                        VerticalAlignment="Center"        
+                        Margin="16 0 0 0"                                            
+                        Text="Material Design In XAML Toolkit" />
                 </StackPanel>
             </DockPanel>
         </materialDesign:ColorZone>
